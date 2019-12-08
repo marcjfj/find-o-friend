@@ -1,0 +1,10 @@
+extends layout
+
+block content
+    .friends
+        h1 Yay!
+        h2 We found your perfect match!
+
+        .best-friend
+            .pic(style=`background-image: url(${bestMatch.photo})`)
+            h3=bestMatch.name

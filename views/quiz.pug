@@ -1,0 +1,19 @@
+extends layout
+
+block content
+    .quiz
+        .intro
+            h1 Quiz Time!
+            h2 Answer the questions below!
+
+        form(action="/friends" method="post").quiz-box
+            each question, i in questions
+                .question-box
+                        .question
+                            h3= question
+                        .answer
+                            input(type="range" min="1" max="5" value="1" id=i name=i).slider
+                        .answers
+            .quiz-end
+                h3 Yay! we're ready to match you with a friend!
+                button(type="submit").button Find my friend!

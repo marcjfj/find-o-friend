@@ -1,0 +1,9 @@
+extends layout
+
+block content
+    .friends
+        h1 All Members
+        each friend in friends
+            .friend
+                .pic(style=`background-image: url(${friend.photo})`)
+                h3=friend.name
