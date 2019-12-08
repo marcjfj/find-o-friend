@@ -1,0 +1,167 @@
+@import url("https://fonts.googleapis.com/css?family=Patrick+Hand|Shrikhand&display=swap");
+
+* {
+    font-family: "Patrick Hand", cursive;
+    color: rgb(6, 63, 23);
+    box-sizing: border-box;
+    &:focus {
+        outline: 0;
+    }
+}
+body {
+    margin: 0;
+    background: rgb(249, 251, 208);
+    background: linear-gradient(
+        115deg,
+        rgba(249, 251, 208, 1) 0%,
+        rgba(153, 171, 3, 1) 100%
+    );
+    background-position: fixed;
+    background-size: cover;
+    min-height: 100vh;
+    max-width: 100vw;
+    overflow-x: hidden;
+}
+h2,
+h3,
+h3 {
+    text-align: center;
+    display: block;
+    width: 100%;
+    margin: 0px 10px;
+}
+h3 {
+    font-size: 40px;
+}
+h1 {
+    margin: 0;
+    color: #fff;
+    font-size: 80px;
+    font-family: "Shrikhand", cursive;
+    font-weight: 400;
+    letter-spacing: 2px;
+    text-shadow: 0px 2px 10px rgba(0, 0, 0, 0.26);
+}
+.button {
+    background: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 18px;
+    text-transform: uppercase;
+    border-radius: 1000px;
+    text-decoration: none;
+}
+.intro {
+    background-image: url("/images/home.jpg");
+    background-size: cover;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem 1rem;
+    max-width: 600px;
+    margin: 0px auto;
+}
+
+.quiz {
+    .intro,
+    .question-box {
+        min-height: 100vh;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 25px;
+    }
+    .answer {
+        margin-top: 100px;
+        width: 100%;
+    }
+    .slider {
+        -webkit-appearance: none;
+        appearance: none;
+        height: 15px;
+        width: 100%;
+        max-width: 600px;
+        background: #fff;
+        display: block;
+        margin: 10px auto;
+        border-radius: 1000px;
+        position: relative;
+        cursor: grab;
+        // border: 3px solid rgb(126, 158, 111);
+        box-shadow: inset 0px 0px 5px 0px rgba(63, 78, 61, 0.192);
+        background: rgb(6, 63, 23);
+
+        &::-webkit-slider-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            background: rgba(249, 251, 208, 1);
+            // background: linear-gradient(
+            //     110deg,
+            //     rgb(141, 233, 245) 0%,
+            //     rgb(43, 90, 117) 100%
+            // );
+            width: 50px;
+            height: 50px;
+            border-radius: 1000px;
+            border: 2px solid rgb(6, 63, 23);
+            position: relative;
+            transform: translateY(-3px);
+        }
+        &::-moz-range-thumb {
+            -webkit-appearance: none;
+            appearance: none;
+            background: rgb(147, 154, 4);
+            background: linear-gradient(
+                110deg,
+                rgb(141, 233, 245) 0%,
+                rgb(43, 90, 117) 100%
+            );
+            width: 50px;
+            height: 50px;
+            border-radius: 1000px;
+        }
+        &::before {
+            content: "Always";
+            font-size: 30px;
+            position: absolute;
+            left: -100px;
+            top: -15px;
+        }
+        &::after {
+            content: "Never";
+            font-size: 30px;
+            position: absolute;
+            right: -90px;
+            top: -15px;
+        }
+    }
+    .quiz-end {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+        flex-direction: column;
+
+        .button {
+            margin-top: 100px;
+        }
+    }
+}
+.friends {
+    h1 {
+        text-align: center;
+    }
+    .best-friend,
+    .friend {
+        .pic {
+            height: 300px;
+            width: 250px;
+            margin: 20px auto;
+            background-size: cover;
+            background-position: center;
+        }
+    }
+}
